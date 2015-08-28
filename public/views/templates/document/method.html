@@ -1,0 +1,12 @@
+<h4> <span>{{ obj.method }} </span> {{ relativeUri | separate }}</h4>
+<p>{{ obj.description }}</p>
+
+<!-- Keys in Method
+  Gerar chaves, depois passar o contéudo
+  e por fim o nome da chave.
+-->
+<div ng-repeat="key in keys"
+     ng-model="key.data"
+     key="key.name"
+     raml-key>
+</div>

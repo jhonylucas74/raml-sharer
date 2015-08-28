@@ -1,0 +1,18 @@
+<div class="box-center-form">
+  <h4>New Project</h4>
+
+  <label>Project origin</label>
+  <select ng-model="project.origin">
+    <option  value="Bitbucket">Bitbucket</option>
+    <option  value="GitHub">GitHub</option>
+    <option  value="Gitlab">Gitlab</option>
+  </select>
+
+  <label>Repository</label>
+  <input ng-model="project.repository" type="text">
+
+  <label>File  path of app.raml</label>
+  <input ng-model="project.path" type="text">
+
+  <button ng-click="create()" class="submit">CREATE PROJECT</button>
+</div>

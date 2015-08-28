@@ -1,0 +1,26 @@
+{
+  "name": "basico-angular-estatico",
+  "version": "0.0.1",
+  "authors": [
+    "Jhony Lucas <jhonyjl37@gmail.com>"
+  ],
+  "description": "Test Bower",
+  "keywords": [
+    "test"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.5",
+    "angular-route": "~1.4.5",
+    "fontawesome": "~4.3.0",
+    "ngDialog": "~0.5.1"
+  }
+}

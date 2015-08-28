@@ -1,0 +1,12 @@
+<div ng-repeat="item in resources track by $index">
+  <h4>{{ item.relativeUri | capitalize }} </h4>
+  <p>{{ item.description }}</p>
+
+  <div class="route get"
+       relative-uri="method.relativeUri"
+       ng-model="method"
+       ng-repeat="method in item.methods track by $index"
+       raml-methods>
+  </div>
+
+</div>

@@ -1,0 +1,11 @@
+
+
+<div ng-repeat="rec in resources track by $index">
+<div class="route get"
+       relative-uri="rec.relativeUri"
+       resources="rec.resources"
+       ng-repeat="mtd in rec.methods track by $index"
+       ng-model="mtd"
+       raml-methods-two>
+  </div>
+</div>

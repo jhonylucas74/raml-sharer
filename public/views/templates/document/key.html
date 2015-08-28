@@ -1,0 +1,16 @@
+<h5>{{ key | normalizeCamelCase }}</h5>
+
+<!-- Body
+==================================-->
+<div ng-show="key == 'body'"
+     ng-model="keys[0].data"
+     header="keys[0].name"
+     raml-body>
+</div>
+
+<!-- Query
+==================================-->
+<div ng-show="key == 'queryParameters'"
+     ng-model="keys[0]"
+     raml-query>
+</div>

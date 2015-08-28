@@ -1,0 +1,16 @@
+<div ng-show="parameters.length > 0">
+  <table>
+    <tr>
+      <td>Name</td>
+      <td>Type</td>
+      <td>Description</td>
+    </tr>
+
+    <tr ng-repeat="param in parameters">
+      <td>{{ param.name }}</td>
+      <td>{{ param.type }}</td>
+      <td>{{ param.description }}</td>
+    </tr>
+
+  </table>
+</div>

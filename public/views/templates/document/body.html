@@ -1,0 +1,22 @@
+<div class="go-right">
+  <h5>Header</h5><br>
+  <code>{{ header }}</code>
+</div>
+
+<div class="go-right" ng-show="parameters.length > 0">
+  <h5>Form Parameters</h5><br>
+  <table >
+    <tr>
+      <td>Name</td>
+      <td>Type</td>
+      <td>Description</td>
+    </tr>
+
+    <tr ng-repeat="param in parameters">
+      <td>{{ param.name }}</td>
+      <td>{{ param.type }}</td>
+      <td>{{ param.description }}</td>
+    </tr>
+
+  </table>
+</div>

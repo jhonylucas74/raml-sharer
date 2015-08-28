@@ -1,0 +1,52 @@
+ #%RAML 0.8
+title: Papudinho
+baseUri: http://developer-papudinho.herokuapp.com/webservice
+mediaType: application/json
+
+/login:
+  description: Recurso para autenticações.
+  post:
+    description: Autenticar usuário.
+    body:
+      formParameters:
+        email:
+          description: E-mail do usuário.
+          type: string
+        password:
+          description: Senha do usuário.
+          type: string
+
+/cards:
+  get:
+    description: |
+      Retorna todos os cartões relacionados a um determinado usuário.
+    queryParameters:
+      user:
+        description: Id do usuário que deseja que retorne os cartões.
+        type: number
+  /due_date:
+    get:
+      description: |
+        Retorna todos os cartões relacionados a um usuário que vencem
+        em 15 dias.
+      queryParameters:
+        user:
+          description: Id do usuário que deseja que retorne os cartões.
+          type: number
+  /due_dote:
+    get:
+      description: |
+        Retorna todos os cartões relacionados a um usuário que vencem
+        em 15 dias.
+      queryParameters:
+        user:
+          description: Id do usuário que deseja que retorne os cartões.
+          type: number
+/eggs:
+  get:
+    description: |
+      Retorna todos os cartões relacionados a um determinado usuário.
+    queryParameters:
+      user:
+        description: Id do usuário que deseja que retorne os cartões.
+        type: number

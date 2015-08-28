@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Template básico Angular para sites estáticos</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CDN FONTS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <!-- BOWER CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" type="text/css" href="vendor/fontawesome/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="vendor/ngDialog/css/ngDialog.min.css">
+  <link rel="stylesheet" type="text/css" href="vendor/ngDialog/css/ngDialog-theme-default.min.css">
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/layout.css">
+
+  <!-- BOWER JS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="vendor/angular/angular.min.js"></script>
+  <script src="vendor/angular-route/angular-route.min.js"></script>
+  <script src="vendor/ngDialog/js/ngDialog.js"></script>
+
+  <!-- JS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="js/raml-parser.min.js"></script>
+
+  <script src="js/app.js"></script>
+  <script src="js/directives.js"></script>
+  <script src="js/factorys.js"></script>
+
+</head>
+<body ng-app="my-app">
+
+  <!-- Header -->
+  <header>
+    <h1 class="title">RAML TEAM</h1>
+    <div class="rigth">
+      <button ng-click="go('#/project/new')"><i class="fa fa-plus"></i> NEW PROJECT</button>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="side-menu-left" ng-controller="leftMenu">
+      <!-- Box for search -->
+      <div class="box-search">
+        <input type="text">
+        <i class="fa fa-search"></i>
+      </div>
+      <!-- List of projects -->
+      <ul>
+        <li ng-repeat="project in projects">
+          <h3>{{ project.repository }}</h3>
+          <h4>{{ project.origin }}</h4>
+          <i class="fa fa-angle-right"></i>
+        </li>
+
+      </ul>
+
+    </div>
+
+    <div class="content">
+    <div ng-include="headerTemplate"></div>
+
+      <div ng-view></div>
+      <div class="footer">
+         <a  class="selected" ng-click="go('#/api/show')"><i class="fa fa-cubes"></i> Document</a>
+         <a href="#"><i class="fa fa-users"></i> Members</a>
+         <a href="#"><i class="fa fa-flask"></i> Test</a>
+         <a href="#"><i class="fa fa-cog"></i> Configuration</a>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+</html>

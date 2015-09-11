@@ -1,0 +1,26 @@
+  /* Dialogs */
+  .ngdialog-content {
+    border-radius: 0px !important;
+    background-color: #fff !important;
+  }
+
+  .ngdialog-content h4 {
+    color: #444;
+    margin: 0 0 10px 0;
+    font-family: 'Sinkin sans';
+  }
+
+  .ngdialog-content p {
+    color: rgba(0,0,0,0.6);
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  .super-title-center {
+    text-align: center;
+    font-family: 'Sinkin sans';
+    font-size: 16px;
+    opacity: 0.8;
+    margin-top: 80px;
+    color: #d0d0d3;
+  }

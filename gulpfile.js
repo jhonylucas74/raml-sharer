@@ -15,7 +15,7 @@
   // Concat css files
   gulp.task('concatCSS', function() {
     return gulp.src('./src/css/*.css')
-      .pipe(concat('layout.js'))
+      .pipe(concat('layout.css'))
       .pipe(gulp.dest('./public/css/build/'));
   });
 

@@ -1,0 +1,10 @@
+  /* Complete blue background*/
+  .blue-background {
+    z-index: 4000;
+    background-color: #7792e7;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }

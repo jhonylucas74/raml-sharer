@@ -1,0 +1,116 @@
+  /* Main Header
+  ======================================================*/
+  header {
+    background-color: #373d47;
+    margin: 0;
+    padding: 10px 15px;
+    position: relative;
+  }
+
+  header .title {
+    margin: 0;
+    color: #979da7;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    vertical-align: top;
+    display: inline-block;
+    line-height: 31px;
+  }
+
+  header .rigth {
+    float: right;
+    vertical-align: top;
+    margin-right: 5px;
+    display: inline-block;
+  }
+
+  header .rigth button {
+    opacity: .7;
+    margin: 0;
+    background-color: rgba(0,0,0,0);;
+    padding: 7px 15px 7px 15px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-family: 'Sinkin sans';
+    font-size: 10px;
+    transition: all 0.5s;
+    text-transform: uppercase;
+  }
+
+  header .rigth button:hover {
+    opacity: 1;
+  }
+
+  header .rigth button i {
+    font-size: 12px;
+    margin-right: 5px;
+  }
+
+  /*    |  CONTENT
+    <><>O==============>
+        |  HEADER
+  ======================================================*/
+
+  .content-header {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #eaeaea;
+    background-color: #fff;
+    position: relative;
+  }
+
+    .content-header h1 {
+      font-family: 'Sinkin sans';
+      font-size: 18px;
+      font-weight: normal;
+      color: #444;
+      margin: 0 0 10px 0;
+    }
+
+      .content-header h1 span {
+        color: #7792e7;
+        text-transform: uppercase;
+      }
+
+    .content-header p {
+      font-family: 'Open Sans', sans-serif;
+      color: rgb(102, 102, 102);
+      font-size: 14px;
+    }
+
+    .content-header .right-buttons {
+      position: absolute;
+      right: 20px;
+      top: 20px;
+    }
+
+    /*    |  GROUP
+      <><>O==============>
+          |  HEADER
+    ======================================================*/
+
+    .group-header img {
+      opacity: .7;
+      width: 70px;
+      height: 70px;
+      border-radius: 35px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    .group-header .side {
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 10px;
+    }
+
+      .group-header .side h1 {
+        margin-bottom: 5px;
+      }
+
+      .group-header .side p {
+        margin-top: 5px;
+      }

@@ -1,0 +1,34 @@
+  .footer {
+    position: fixed;
+    height: 50px;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: #fff;
+    right: 0;
+    left: 250px;
+    bottom: 0;
+    border-top: 1px solid #eaeaea;
+    cursor: default;
+  }
+
+  .footer a {
+    line-height: 29px;
+    text-decoration: none;
+    font-family: 'Sinkin sans';
+    cursor: default;
+    color: #969696;
+    margin: 0 4px 0 7px;
+    font-size: 12px;
+  }
+
+  .footer a i {
+    font-size: 18px;
+  }
+
+  .footer a.selected {
+    color: #373d47;
+  }
+
+  .footer a:hover {
+    color: #7792e7;
+  }

@@ -14,7 +14,7 @@
     }
 
     button:hover {
-      opacity: 0.9;
+      opacity: 0.7;
     }
 
   /* Buttons styles
@@ -59,23 +59,38 @@
     color: #fff;
   }
 
+  /* Changers shapes
+  ======================================================*/
+  .btn-rounded {
+    border: none;
+    border-radius: 15px;
+    padding: 8px 15px;
+    font-family: 'Sinkin sans';
+    font-size: 12px;
+    transition: all 0.5s;
+  }
+
   /* Buttons and icons
   ======================================================*/
   button i {
-    font-size: 18px;
+    font-size: medium !important;
     margin-right: 5px;
   }
 
-  /* Buttons size and position modifiers
+  /*  Modifiers of size and position
   ======================================================*/
   .btn-full {
     width: 100%;
     box-sizing: border-box;
   }
 
+  .btn-center {
+    display: block;
+    margin: 10px auto;
+  }
+
   /* Buttons containers
   ======================================================*/
-  button i {
   .halt-fisrt {
     width: 48%;
     box-sizing: border-box;

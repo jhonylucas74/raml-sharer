@@ -1,0 +1,70 @@
+  /* Mini Cards with image,title and button
+    in center.
+  ------------------------------------------- */
+  .mini-cards-container {
+    padding: 20px;
+  }
+
+  .mini-card {
+    display: inline-block;
+    margin: 5px;
+    width: 200px;
+    height: 200px;
+    padding: 20px 10px 10px 10px;
+    background-color: #fff;
+  }
+
+    .mini-card img {
+      opacity: .7;
+      width: 90px;
+      height: 90px;
+      border-radius: 45px;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .mini-card h4 {
+      text-align: center;
+      margin: 5px 0px;
+      color: #444;
+      font-family: 'Sinkin sans';
+    }
+
+    .mini-card h6 {
+      margin: 5px 0px;
+      text-align: center;
+      color: #444;
+      opacity: 0.8;
+      font-family: 'Sinkin sans';
+    }
+
+  /* User horizontal card
+      ___
+     /img\  Title here
+     \___/  sub title
+  ------------------------------------------- */
+  .user-card img{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+
+  .user-card div {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .user-card div h4 {
+    margin: 0;
+    color: #444;
+    font-family: 'Sinkin sans';
+  }
+
+  .user-card div h5 {
+    margin: 0;
+    color: #c1cacd;
+    font-family: 'Sinkin sans';
+  }

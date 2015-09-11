@@ -1,0 +1,97 @@
+
+  /* container of documentation */
+  .code-api {
+    margin: 10px;
+    padding: 20px;
+    color: #444;
+    overflow-y: auto;
+    background-color: #fff;
+  }
+
+    .code-api h4 {
+      margin: 0 0 10px 0;
+      font-family: 'Sinkin sans';
+      font-size: 18px;
+    }
+
+    .code-api p {
+      margin-top: 0;
+      font-size: 14px;
+      font-family: 'Open Sans', sans-serif;
+      margin-bottom: 10px;
+    }
+
+
+  /* Tags
+  ==================================================*/
+  code {
+    margin-top: 5px;
+    background-color: #f8f8f8;
+    padding: 5px;
+    display: inline-block;
+    font-size: 13px;
+    color: #868686;
+  }
+
+  status {
+    display: block;
+    margin-top: 5px;
+    color: #969696;
+  }
+
+  /* ROUTE
+  ==================================================*/
+  .route {
+    margin-bottom: 20px;
+  }
+
+  .route h4 {
+    background-color: #f8f8f8;
+    width: auto;
+    display: inline-block;
+    padding: 5px;
+    margin: 0;
+    font-family: 'Sinkin sans';
+    font-size: 14px;
+    background-color: #f8f8f8;
+    color: #868686;
+    margin-bottom: 10px;
+  }
+
+  .route h5 {
+    width: auto;
+    display: inline-block;
+    margin: 10px 0 0 0;
+    font-family: 'Sinkin sans';
+    font-size: 13px;
+    color: #444;
+  }
+
+  .route table {
+    margin-top: 10px;
+    font-size: 13px;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    border: 1px solid #eaeaea;
+  }
+
+  .route table tr:first-child {
+    border-bottom: 1px solid #eaeaea;
+    background-color: rgba(0,0,0,0.022);
+  }
+
+  .route table tr td {
+    padding: 5px 10px;
+    border-right: 1px solid #eaeaea;
+  }
+
+  .route.get span {
+    color: #56d287;
+    text-transform: uppercase;
+  }
+
+  /* Position modifiers
+  ==================================================*/
+  .go-right {
+    padding-left: 20px;
+  }

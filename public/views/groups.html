@@ -7,7 +7,20 @@
     <img src="{{ group.avatar }}">
     <h4>{{ group.name }}</h4>
     <h6>1 member</h6>
-    <button class="details"
+    <button class="btn-rounded btn-center btn-blue"
+      ng-click="showDetails()">
+      Details
+    </button>
+
+  </div>
+
+  <div class="mini-card fx-zoom-up"
+    ng-repeat="group in groups">
+
+    <img src="{{ group.avatar }}">
+    <h4>{{ group.name }}</h4>
+    <h6>1 member</h6>
+    <button class="btn-rounded btn-center btn-red"
       ng-click="showDetails()">
       Details
     </button>

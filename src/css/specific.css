@@ -1,0 +1,49 @@
+  /* For route login
+  ======================================================*/
+  .big-logo {
+    width: 400px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+
+    .big-logo h1 {
+      width: 100%;
+      font-size: 45px;
+      text-align: center;
+      font-family: 'Montserrat', sans-serif;
+      margin-bottom: 10px;
+      color: #fff;
+    }
+
+    .big-logo p {
+      width: 300px;
+      margin: 0 auto;
+      color: #fff;
+      text-align: center;
+      font-family: 'Open Sans', sans-serif;
+    }
+
+
+  /* history
+  ======================================================*/
+  .history ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .history ul li {
+    cursor: default;
+    margin: 0;
+    font-size: 14px;
+    padding: 10px;
+    padding-left: 20px;
+    font-family: 'Open Sans', sans-serif;
+    color: #b6b7b9;
+    border-bottom: 1px solid #f0f1f4;
+  }
+
+  .history ul li span {
+    color: #576366;
+  }

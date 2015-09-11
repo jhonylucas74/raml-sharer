@@ -1,0 +1,63 @@
+  /* centralized form
+  ======================================================*/
+  .box-center-form {
+    font-family: 'Sinkin sans';
+    width: 400px;
+    display: block;
+    margin: 40px auto 0 auto;
+    padding: 15px;
+    background-color: #fff;
+    box-sizing: border-box;
+  }
+
+  /* Main title */
+  .box-center-form h4 {
+    color: #444;
+    margin: 0 0 10px 0;
+  }
+
+  /*labek for inputs*/
+  .box-center-form label {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    display: block;
+    color: rgba(0,0,0,0.6);
+    font-size: 15px;
+    margin: 10px 0;
+  }
+
+  .box-center-form input,
+  .box-center-form select {
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    box-sizing: border-box;
+    height: 32px;
+    background-color: rgba(0,0,0,0.02);
+    border: 1px solid rgba(0,0,0,0.04);
+    font-size: 14px;
+    padding-left: 10px;
+  }
+
+  .box-center-form input:focus,
+  .box-center-form select:focus {
+    outline: none;
+  }
+
+  .box-center-form .submit {
+    width: 100%;
+  }
+
+  /* Form footer center
+  ======================================================*/
+  .form-footer-center {
+    width: 400px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+
+  .form-footer-center .btn-white {
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+  }

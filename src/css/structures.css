@@ -1,0 +1,163 @@
+
+  /*_______________________<container>______________________
+    |                |                                     |
+    | ============== |                                     |
+    | -------        |                                     |
+    | -----          |                                     |
+    | ---------      |                                     |
+    | ------         |                                     |
+    | side-menu-left |              content                |
+    | --------       |                                     |
+    | ------         |                                     |
+    | ----           |                                     |
+    | ---------      |                                     |
+    |                |                                     |
+    |________________|_____________________________________|
+  */
+
+  .container {
+    /* fles box */
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex: 1;
+            flex: 1;
+  }
+
+  /* Menu left
+  ======================================================*/
+
+  .side-menu-left {
+    position: relative;
+    margin: 0;
+    width: 250px;
+    border-right: 1px solid #eaeaea;
+    box-sizing: border-box;
+  }
+
+  /* box-search */
+  .side-menu-left .box-search {
+    box-sizing: border-box;
+    height: 40px;
+    border-bottom: 1px solid #eaeaea;
+    position: relative;
+  }
+
+    .side-menu-left  .box-search input {
+      border: none;
+      outline: none;
+      box-sizing: border-box;
+      height: 100%;
+      padding-left: 40px;
+      width: 100%;
+      color: #4d4d4d;
+      font-family: 'Sinkin sans';
+      font-size: 12px;
+    }
+    .side-menu-left  .box-search .fa-search {
+      position: absolute;
+      color: #e1e1e1;
+      font-size: 18px;
+      left: 15px;
+      top: 10px;
+    }
+  /* end box-search */
+
+  .side-menu-left ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+    .side-menu-left ul li {
+      margin: 0;
+      padding: 10px 15px;
+      box-sizing: border-box;
+      border-bottom: 1px solid #eaeaea;
+      position: relative;
+
+      transition: all 0.5s;
+    }
+
+    .side-menu-left ul li:hover {
+      background-color: rgba(0,0,0,0.02);
+    }
+
+    /* Main title */
+    .side-menu-left ul li h3 {
+      margin: 0 0 5px 0;
+      font-family: 'Sinkin sans';
+      font-size: 12px;
+    }
+
+    /* Sub title */
+    .side-menu-left ul li h4 {
+      margin: 0 0 5px 0;
+      font-family: 'Sinkin sans';
+      font-size: 10px;
+      color: #9e9e9e;
+    }
+
+    /* Arrow right */
+    .side-menu-left ul li i {
+      position: absolute;
+      right: 15px;
+      top: 8px;
+      font-size: 45px;
+      color: #e1e1e1;
+    }
+
+
+  /* Content
+  ======================================================*/
+  .content {
+    -webkit-flex: 1;
+            flex: 1;
+    overflow-y: auto;
+    position: relative;
+    background-color: #f0f1f4;
+    margin-bottom: 50px;
+  }
+
+
+  /*__________________<inner-container>_____________________
+    |                                    |   inner right   |
+    |                                    |     options     |
+    |                                    |  _____________  |
+    |                                    | |             | |
+    |                                    | |  list-box   | |
+    |                                    | |             | |
+    |             history                | |_____________| |
+    |                                    |  _____________  |
+    |                                    | |             | |
+    |                                    | |  list-box   | |
+    |                                    | |             | |
+    |                                    | |_____________| |
+    |____________________________________|_________________|
+  */
+
+  .inner-container {
+    display: -webkit-flex;
+    display: flex;
+    padding: 10px;
+    flex: 1;
+  }
+
+  /* Inner content
+  ======================================================*/
+  .inner-content {
+    -webkit-flex: 1;
+            flex: 1;
+    background-color: #fff;
+    margin-right: 10px;
+    margin-bottom: 10px
+  }
+
+  /* Right options
+  ======================================================*/
+  .inner-right-options {
+    width: 450px;
+    display: -webkit-flex;
+            display: flex;
+    -webkit-flex-direction: column;
+            flex-direction: column;
+  }

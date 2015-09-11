@@ -1,0 +1,91 @@
+  /* Default style for buttons
+  ======================================================*/
+  button {
+    border: none;
+    border-radius: 3px;
+    padding: 8px 15px;
+    font-family: 'Sinkin sans';
+    font-size: 12px;
+    transition: all 0.5s;
+  }
+
+    button:focus {
+      outline: none;
+    }
+
+    button:hover {
+      opacity: 0.9;
+    }
+
+  /* Buttons styles
+  ======================================================*/
+
+  button.submit {
+    background-color: #37d077;
+    color: #fff;
+    margin-top: 10px;
+  }
+
+  button.error {
+    background-color: #e74c3c;
+    opacity: .6;
+    color: #fff;
+    margin-top: 10px;
+  }
+
+  .btn-blue {
+    background-color: #7792e7;
+    color: #fff;
+  }
+
+  .btn-green {
+    background-color: #37d077;
+    color: #fff;
+  }
+
+  .btn-white {
+    background-color: #fff;
+    color: #7792e7;
+  }
+
+  .btn-snow {
+    background-color: #ecf0f1;
+    color: #666C6D;
+  }
+
+  .btn-red {
+    opacity: .5;
+    background-color: #e74c3c;
+    color: #fff;
+  }
+
+  /* Buttons and icons
+  ======================================================*/
+  button i {
+    font-size: 18px;
+    margin-right: 5px;
+  }
+
+  /* Buttons size and position modifiers
+  ======================================================*/
+  .btn-full {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* Buttons containers
+  ======================================================*/
+  button i {
+  .halt-fisrt {
+    width: 48%;
+    box-sizing: border-box;
+    margin-right: 1%;
+    display: inline-block;
+  }
+
+  .halt-last {
+    width: 48%;
+    margin-left: 1%;
+    display: inline-block;
+    box-sizing: border-box;
+  }

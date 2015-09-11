@@ -20,7 +20,6 @@ function createMainWindow() {
 
 	win.loadUrl(`file://${__dirname}/public/index.html`);
 	win.on('closed', onClosed);
-
 	return win;
 }
 

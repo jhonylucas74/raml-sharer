@@ -1,0 +1,57 @@
+<h3 class="super-title-center">Select or create a new project!</h3>
+
+
+<div class="login-background fx-fade-up" ng-show="visible">
+
+    <div class="big-logo">
+      <h1>RAML TEAM</h1>
+      <p>Desktop application to share and to
+        document APIs with your team.</p>
+    </div>
+
+    <!-- Sign In Form
+    ==========================================================-->
+    <div class="box-center-form fx-fade-normal" ng-show="signIn">
+      <h4>Sing in</h4>
+
+      <label>E-mail</label>
+      <input ng-model="login.email" type="email">
+
+      <label>Password</label>
+      <input ng-model="login.password" type="password">
+
+      <button class="submit" ng-click="auth()">CONFIRM</button>
+    </div>
+
+    <!-- Sign Up Form
+    ==========================================================-->
+    <div class="box-center-form fx-fade-up" ng-show="signUp">
+      <h4>Sing up</h4>
+
+      <label>Name</label>
+      <input ng-model="register.name" type="">
+
+      <label>E-mail</label>
+      <input ng-model="register.email" type="email">
+
+      <label>Password</label>
+      <input ng-model="register.password" type="password">
+
+      <label>Confirm Password</label>
+      <input ng-model="register.confirmPassword" type="password">
+
+      <button class="submit" ng-click="registerUser()">CONFIRM</button>
+    </div>
+
+    <div class="footer-center fx-zoom-up"   ng-show="signIn">
+      <button class="btn-white " name="button"
+        ng-click="signUpForm()">SING UP</button>
+    </div>
+
+    <div class="footer-center fx-zoom-up"     ng-show="signUp">
+        <button class="btn-white fx-zoom-up" name="button"
+          ng-click="signInForm()">CANCEL</button>
+    </div>
+
+
+</div>

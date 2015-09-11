@@ -1,154 +1,42 @@
 0 info it worked if it ends with ok
-1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'install' ]
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '--global',
+1 verbose cli   'gulp' ]
 2 info using npm@1.4.28
 3 info using node@v0.10.33
-4 verbose readDependencies using package.json deps
-5 verbose install where, deps [ '/Users/jhonylucas/projetos/estudos/electron/api-sharer',
-5 verbose install   [ 'electron-debug',
-5 verbose install     'electron-packager',
-5 verbose install     'electron-prebuilt',
-5 verbose install     'xo' ] ]
-6 info preinstall app@0.0.0
-7 verbose readDependencies using package.json deps
-8 verbose cache add [ 'electron-debug@^0.1.1', null ]
-9 verbose cache add name=undefined spec="electron-debug@^0.1.1" args=["electron-debug@^0.1.1",null]
-10 verbose parsed url { protocol: null,
-10 verbose parsed url   slashes: null,
-10 verbose parsed url   auth: null,
-10 verbose parsed url   host: null,
-10 verbose parsed url   port: null,
-10 verbose parsed url   hostname: null,
-10 verbose parsed url   hash: null,
-10 verbose parsed url   search: null,
-10 verbose parsed url   query: null,
-10 verbose parsed url   pathname: 'electron-debug@^0.1.1',
-10 verbose parsed url   path: 'electron-debug@^0.1.1',
-10 verbose parsed url   href: 'electron-debug@^0.1.1' }
-11 verbose cache add [ 'electron-packager@^5.0.0', null ]
-12 verbose cache add name=undefined spec="electron-packager@^5.0.0" args=["electron-packager@^5.0.0",null]
-13 verbose parsed url { protocol: null,
-13 verbose parsed url   slashes: null,
-13 verbose parsed url   auth: null,
-13 verbose parsed url   host: null,
-13 verbose parsed url   port: null,
-13 verbose parsed url   hostname: null,
-13 verbose parsed url   hash: null,
-13 verbose parsed url   search: null,
-13 verbose parsed url   query: null,
-13 verbose parsed url   pathname: 'electron-packager@^5.0.0',
-13 verbose parsed url   path: 'electron-packager@^5.0.0',
-13 verbose parsed url   href: 'electron-packager@^5.0.0' }
-14 verbose cache add [ 'electron-prebuilt@^0.31.0', null ]
-15 verbose cache add name=undefined spec="electron-prebuilt@^0.31.0" args=["electron-prebuilt@^0.31.0",null]
-16 verbose parsed url { protocol: null,
-16 verbose parsed url   slashes: null,
-16 verbose parsed url   auth: null,
-16 verbose parsed url   host: null,
-16 verbose parsed url   port: null,
-16 verbose parsed url   hostname: null,
-16 verbose parsed url   hash: null,
-16 verbose parsed url   search: null,
-16 verbose parsed url   query: null,
-16 verbose parsed url   pathname: 'electron-prebuilt@^0.31.0',
-16 verbose parsed url   path: 'electron-prebuilt@^0.31.0',
-16 verbose parsed url   href: 'electron-prebuilt@^0.31.0' }
-17 verbose cache add [ 'xo@^0.7.1', null ]
-18 verbose cache add name=undefined spec="xo@^0.7.1" args=["xo@^0.7.1",null]
-19 verbose parsed url { protocol: null,
-19 verbose parsed url   slashes: null,
-19 verbose parsed url   auth: null,
-19 verbose parsed url   host: null,
-19 verbose parsed url   port: null,
-19 verbose parsed url   hostname: null,
-19 verbose parsed url   hash: null,
-19 verbose parsed url   search: null,
-19 verbose parsed url   query: null,
-19 verbose parsed url   pathname: 'xo@^0.7.1',
-19 verbose parsed url   path: 'xo@^0.7.1',
-19 verbose parsed url   href: 'xo@^0.7.1' }
-20 verbose cache add name="electron-debug" spec="^0.1.1" args=["electron-debug","^0.1.1"]
-21 verbose parsed url { protocol: null,
-21 verbose parsed url   slashes: null,
-21 verbose parsed url   auth: null,
-21 verbose parsed url   host: null,
-21 verbose parsed url   port: null,
-21 verbose parsed url   hostname: null,
-21 verbose parsed url   hash: null,
-21 verbose parsed url   search: null,
-21 verbose parsed url   query: null,
-21 verbose parsed url   pathname: '^0.1.1',
-21 verbose parsed url   path: '^0.1.1',
-21 verbose parsed url   href: '^0.1.1' }
-22 verbose addNamed [ 'electron-debug', '^0.1.1' ]
-23 verbose addNamed [ null, '>=0.1.1-0 <0.2.0-0' ]
-24 verbose cache add name="electron-packager" spec="^5.0.0" args=["electron-packager","^5.0.0"]
-25 verbose parsed url { protocol: null,
-25 verbose parsed url   slashes: null,
-25 verbose parsed url   auth: null,
-25 verbose parsed url   host: null,
-25 verbose parsed url   port: null,
-25 verbose parsed url   hostname: null,
-25 verbose parsed url   hash: null,
-25 verbose parsed url   search: null,
-25 verbose parsed url   query: null,
-25 verbose parsed url   pathname: '^5.0.0',
-25 verbose parsed url   path: '^5.0.0',
-25 verbose parsed url   href: '^5.0.0' }
-26 verbose addNamed [ 'electron-packager', '^5.0.0' ]
-27 verbose addNamed [ null, '>=5.0.0-0 <6.0.0-0' ]
-28 verbose cache add name="electron-prebuilt" spec="^0.31.0" args=["electron-prebuilt","^0.31.0"]
-29 verbose parsed url { protocol: null,
-29 verbose parsed url   slashes: null,
-29 verbose parsed url   auth: null,
-29 verbose parsed url   host: null,
-29 verbose parsed url   port: null,
-29 verbose parsed url   hostname: null,
-29 verbose parsed url   hash: null,
-29 verbose parsed url   search: null,
-29 verbose parsed url   query: null,
-29 verbose parsed url   pathname: '^0.31.0',
-29 verbose parsed url   path: '^0.31.0',
-29 verbose parsed url   href: '^0.31.0' }
-30 verbose addNamed [ 'electron-prebuilt', '^0.31.0' ]
-31 verbose addNamed [ null, '>=0.31.0-0 <0.32.0-0' ]
-32 verbose cache add name="xo" spec="^0.7.1" args=["xo","^0.7.1"]
-33 verbose parsed url { protocol: null,
-33 verbose parsed url   slashes: null,
-33 verbose parsed url   auth: null,
-33 verbose parsed url   host: null,
-33 verbose parsed url   port: null,
-33 verbose parsed url   hostname: null,
-33 verbose parsed url   hash: null,
-33 verbose parsed url   search: null,
-33 verbose parsed url   query: null,
-33 verbose parsed url   pathname: '^0.7.1',
-33 verbose parsed url   path: '^0.7.1',
-33 verbose parsed url   href: '^0.7.1' }
-34 verbose addNamed [ 'xo', '^0.7.1' ]
-35 verbose addNamed [ null, '>=0.7.1-0 <0.8.0-0' ]
-36 silly lockFile f8f2da35-electron-debug-0-1-1 electron-debug@^0.1.1
-37 verbose lock electron-debug@^0.1.1 /Users/jhonylucas/.npm/f8f2da35-electron-debug-0-1-1.lock
-38 silly lockFile 12437695-electron-packager-5-0-0 electron-packager@^5.0.0
-39 verbose lock electron-packager@^5.0.0 /Users/jhonylucas/.npm/12437695-electron-packager-5-0-0.lock
-40 silly lockFile c2f7432d-electron-prebuilt-0-31-0 electron-prebuilt@^0.31.0
-41 verbose lock electron-prebuilt@^0.31.0 /Users/jhonylucas/.npm/c2f7432d-electron-prebuilt-0-31-0.lock
-42 silly lockFile f22edaaa-xo-0-7-1 xo@^0.7.1
-43 verbose lock xo@^0.7.1 /Users/jhonylucas/.npm/f22edaaa-xo-0-7-1.lock
-44 silly lockFile 12437695-electron-packager-5-0-0 electron-packager@^5.0.0
-45 error Error: Attempt to unlock electron-packager@^5.0.0, which hasn't been locked
-45 error     at unlock (/usr/local/lib/node_modules/npm/lib/utils/locker.js:44:11)
-45 error     at cb (/usr/local/lib/node_modules/npm/lib/cache/add-named.js:32:5)
-45 error     at /usr/local/lib/node_modules/npm/lib/cache/add-named.js:41:20
-45 error     at /usr/local/lib/node_modules/npm/lib/utils/locker.js:30:7
-45 error     at cb (/usr/local/lib/node_modules/npm/node_modules/lockfile/lockfile.js:149:38)
-45 error     at /usr/local/lib/node_modules/npm/node_modules/lockfile/lockfile.js:177:38
-45 error     at Object.oncomplete (fs.js:107:15)
-46 error If you need help, you may report this *entire* log,
-46 error including the npm and node versions, at:
-46 error     <http://github.com/npm/npm/issues>
-47 error System Darwin 13.4.0
-48 error command "/usr/local/bin/node" "/usr/local/bin/npm" "install"
-49 error cwd /Users/jhonylucas/projetos/estudos/electron/api-sharer
-50 error node -v v0.10.33
-51 error npm -v 1.4.28
-52 verbose exit [ 1, true ]
+4 verbose cache add [ 'gulp', null ]
+5 verbose cache add name=undefined spec="gulp" args=["gulp",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'gulp',
+6 verbose parsed url   path: 'gulp',
+6 verbose parsed url   href: 'gulp' }
+7 silly lockFile 9750c68d-gulp gulp
+8 verbose lock gulp /Users/jhonylucas/.npm/9750c68d-gulp.lock
+9 silly lockFile 9750c68d-gulp gulp
+10 error Error: Attempt to unlock gulp, which hasn't been locked
+10 error     at unlock (/usr/local/lib/node_modules/npm/lib/utils/locker.js:44:11)
+10 error     at cb (/usr/local/lib/node_modules/npm/lib/cache/add-local.js:30:5)
+10 error     at /usr/local/lib/node_modules/npm/lib/cache/add-local.js:47:20
+10 error     at /usr/local/lib/node_modules/npm/lib/utils/locker.js:30:7
+10 error     at cb (/usr/local/lib/node_modules/npm/node_modules/lockfile/lockfile.js:149:38)
+10 error     at /usr/local/lib/node_modules/npm/node_modules/lockfile/lockfile.js:177:38
+10 error     at Object.oncomplete (fs.js:107:15)
+11 error If you need help, you may report this *entire* log,
+11 error including the npm and node versions, at:
+11 error     <http://github.com/npm/npm/issues>
+12 error System Darwin 13.4.0
+13 error command "/usr/local/bin/node" "/usr/local/bin/npm" "install" "--global" "gulp"
+14 error cwd /Users/jhonylucas/projetos/estudos/electron/api-sharer
+15 error node -v v0.10.33
+16 error npm -v 1.4.28
+17 verbose exit [ 1, true ]

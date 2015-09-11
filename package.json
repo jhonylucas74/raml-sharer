@@ -28,11 +28,16 @@
     "electron-app"
   ],
   "dependencies": {
-    "electron-debug": "^0.1.1"
+    "electron-debug": "^0.1.1",
+    "node-curl": "^0.3.3",
+    "oauth": "^0.9.13"
   },
   "devDependencies": {
     "electron-packager": "^5.0.0",
     "electron-prebuilt": "^0.31.0",
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-run": "^1.6.10",
     "xo": "^0.7.1"
   },
   "xo": {

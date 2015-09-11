@@ -1,0 +1,16 @@
+<!-- Groups
+===================================-->
+<div class="mini-cards-container" >
+  <div class="mini-card fx-zoom-up"
+    ng-repeat="group in groups">
+
+    <img src="{{ group.avatar }}">
+    <h4>{{ group.name }}</h4>
+    <h6>1 member</h6>
+    <button class="details"
+      ng-click="showDetails()">
+      Details
+    </button>
+
+  </div>
+</div>

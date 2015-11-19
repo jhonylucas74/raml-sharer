@@ -1,4 +1,12 @@
   /* List Box
+      ___________________________
+      | some title              |
+      |-------------------------|
+      | some item here          |
+      |-------------------------|
+      | some item here          |
+      |_________________________|
+
   ======================================================*/
   .list-box {
     background-color: #fff;
@@ -12,6 +20,7 @@
   }
 
   .list-box h4 {
+    display: inline-block;
     color: rgb(102,102,102);
     font-family: 'Sinkin sans';
     margin: 0;
@@ -21,8 +30,7 @@
     cursor: default;
     margin: 0;
     font-size: 14px;
-    padding: 10px;
-    padding-left: 20px;
+    padding: 10px 20px;
     font-family: 'Open Sans', sans-serif;
     border-bottom: 1px solid #f0f1f4;
   }
@@ -31,4 +39,52 @@
     font-family: 'Sinkin sans';
     color: #576366;
     margin: 0;
+  }
+
+  .list-box .action {
+    float: right;
+    margin-right: 10px;
+    font-size: 12px;
+    vertical-align: top;
+    color: #c1cacd;
+    font-size: 14px;
+    transition: all 0.5s;
+  }
+
+  .list-box .action:hover {
+    color: #a5acaf;
+  }
+
+  /* Components
+  =====================================================*/
+  .list-box input,
+  .list-box select {
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    box-sizing: border-box;
+    height: 32px;
+    background-color: rgba(0,0,0,0.02);
+    border: 1px solid rgba(0,0,0,0.04);
+    font-size: 14px;
+    padding-left: 10px;
+  }
+
+  .list-box label {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    display: block;
+    color: rgba(0,0,0,0.6);
+    font-size: 15px;
+    margin: 10px 0;
+  }
+  /* type of li
+  =====================================================*/
+
+  /* Icon and title */
+  li.icon-title i {
+    margin-right: 10px;
+  }
+
+  li.icon-title:hover {
+    background-color: rgba(0,0,0,0.03);
   }

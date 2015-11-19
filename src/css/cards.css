@@ -68,3 +68,18 @@
     color: #c1cacd;
     font-family: 'Sinkin sans';
   }
+
+  .user-card .action {
+    margin-top: 20px;
+    float: right;
+    font-size: 18px;
+    margin-right: 10px;
+    vertical-align: top;
+    color: #c1cacd;
+    font-family: 'Sinkin sans';
+    transition: all 0.5s;
+  }
+
+  .user-card .action:hover {
+    color: #a5acaf;
+  }

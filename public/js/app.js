@@ -56,4 +56,10 @@ app.run(function($rootScope, $window, $http){
   $rootScope.go = function(uri){
     $window.location = uri;
   };
+
+  $rootScope.signOut = function(){
+    localStorage.clear();
+    alert("sdsd");
+    $window.location = "/";
+  }
 });

@@ -38,8 +38,8 @@
     padding-left: 10px;
   }
 
-  .box-center-form input:focus,
-  .box-center-form select:focus {
+  input:focus,
+  select:focus {
     outline: none;
   }
 

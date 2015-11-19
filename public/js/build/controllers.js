@@ -66,7 +66,8 @@ app.controller("initialController", function($scope, Projects, $window, $timeout
       // set global username
       $rootScope.username = res.data.results[0].name;
       // save user in local storage for future use
-      localStorage.setItem('user',JSON.stringify(res.data.user));
+      localStorage.setItem('user',JSON.stringify(res.data.results[0]));
+      localStorage.setItem('user_id',res.data.results[0].id);
       // Save credentials for next time
       localStorage.setItem('credentials',JSON.stringify(credentials));
 
@@ -269,8 +270,43 @@ app.controller('documentController', function($scope, $rootScope, origin, ngDial
     });
 });
 
-app.controller("groupController", function($scope, $rootScope, $timeout, Group, $window){
+app.controller("groupController", function($scope, $rootScope, $timeout, Group, $routeParams){
   $rootScope.headerTemplate = "views/templates/headers/group.html";
+  $scope.showAddMember = true;
+  $scope.showCloseForm = false;
+
+  $scope.addMember = function(){
+    $scope.showAddMember = false;
+    $scope.showCloseForm = true;
+    var addBtn = document.getElementById('add-member');
+    addBtn.style.display = 'none';
+
+    var addBtn = document.getElementById('close-member-form');
+    addBtn.style.display = 'inline-block';
+  };
+
+  $scope.closeAddMember = function(){
+    $scope.showCloseForm = false;
+    var addBtn = document.getElementById('add-member');
+    addBtn.style.display = 'inline-block';
+
+    var addBtn = document.getElementById('close-member-form');
+    addBtn.style.display = 'none';
+
+    $timeout(function(){
+      $scope.showAddMember = true;
+    },300);
+  };
+
+  Group.members($routeParams.id).then(function(result){
+    console.log(result);
+    $scope.members = result;
+  });
+
+  Group.history($routeParams.id).then(function(result){
+    console.log(result);
+    $scope.histories = result;
+  });
 
 });
 
@@ -278,18 +314,20 @@ app.controller("groupsController", function($scope, $rootScope, $timeout, Group,
   $rootScope.headerTemplate = "views/templates/headers/groups.html";
 
   // fetch groups
-  Group.index().then(function(result){
+  var userId = localStorage.getItem('user_id');
+  Group.index(userId).then(function(result){
     console.log(result);
     $scope.groups = result;
     $scope.groupsList = true;
   });
 
+
   // show details about group
-  $scope.showDetails = function(){
+  $scope.showDetails = function(groupId){
     $scope.groupsList = null;
     $scope.groups = null;
     $timeout(function(){
-      $window.location = '#/group';
+      $window.location = '#/group?id='+groupId;
     },500);
   };
 

@@ -114,3 +114,18 @@
       .group-header .side p {
         margin-top: 5px;
       }
+
+    /* Header simples nav
+    ======================================================*/
+    nav span {
+      margin-right: 10px;
+      font-size: 12px;
+      color: #c1cacd;
+      font-family: 'Sinkin sans';
+      transition: all 0.5s;
+      cursor: default;
+    }
+
+    nav span:hover {
+      color: #a5acaf;
+    }

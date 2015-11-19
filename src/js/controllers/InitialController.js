@@ -66,7 +66,8 @@ app.controller("initialController", function($scope, Projects, $window, $timeout
       // set global username
       $rootScope.username = res.data.results[0].name;
       // save user in local storage for future use
-      localStorage.setItem('user',JSON.stringify(res.data.user));
+      localStorage.setItem('user',JSON.stringify(res.data.results[0]));
+      localStorage.setItem('user_id',res.data.results[0].id);
       // Save credentials for next time
       localStorage.setItem('credentials',JSON.stringify(credentials));
 

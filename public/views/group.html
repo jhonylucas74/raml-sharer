@@ -1,37 +1,62 @@
 <!-- Group
 ===================================-->
-<div class="inner-container" >
+<div class="inner-container fx-fade-down" ng-show="members">
   <div class="inner-content history">
     <ul>
-      <li>Group created in 01/25/2015</li>
-      <li><span>Group</span> created in 01/25/2015</li>
+      <li ng-repeat="history in histories">{{ history.message }}</li>
     </ul>
   </div>
 
   <div class="inner-right-options">
     <div class="list-box">
       <ul>
-        <li><h4>Members</h4></li>
-        <li class="user-card">
-          <img src="images/cat.png">
-          <div>
-            <h4>Jhony Lucas</h4>
-            <h5>owner</h5>
-          </div>
+        <li>
+          <h4>Members</h4>
+          <span class="action"
+            id="add-member"
+            ng-click="addMember()">
+            Add member
+          </span>
+          <span class="action"
+            id="close-member-form"
+            style=" display: none;"
+            ng-click="closeAddMember()">
+            Close form
+          </span>
         </li>
-        <li class="user-card">
-          <img src="images/cat.png">
-          <div>
-            <h4>Jhony Lucas</h4>
-            <h5>owner</h5>
-          </div>
+        <li class="fx-fade-down" ng-show="showCloseForm">
+          <label>Search user</label>
+          <input type="text" value="">
+
+          <ul>
+            <li class="user-card"
+                ng-repeat="member in members">
+              <img ng-src="images/cat.png">
+              <div>
+                <h4>{{ member.name }}</h4>
+                <h5>{{ member.role }}</h5>
+              </div>
+              <span class="action"><i class="fa fa-hand-o-up"></i><span>
+            </li>
+          </ul>
+
+          <label>Role</label>
+          <select>
+            <option>developer</option>
+            <option>master</option>
+            <option>owner</option>
+          </select>
+          <button class="submit">Save new member</button>
         </li>
-        <li class="user-card">
-          <img src="images/cat.png">
+        <li class="user-card"
+            ng-repeat="member in members"
+            ng-show="showAddMember">
+          <img ng-src="images/cat.png">
           <div>
-            <h4>Jhony Lucas</h4>
-            <h5>owner</h5>
+            <h4>{{ member.name }}</h4>
+            <h5>{{ member.role }}</h5>
           </div>
+          <span class="action"><i class="fa fa-ellipsis-h"></i><span>
         </li>
       </ul>
 
@@ -39,11 +64,14 @@
 
     <div class="list-box">
       <ul>
-        <li><h4>Projects</h4></li>
-        <li><h5><i class="fa fa-file"></i> Papudinho</h5></li>
-        <li><h5><i class="fa fa-file"></i> Papudinho</h5></li>
-        <li><h5><i class="fa fa-file"></i> Papudinho</h5></li>
-        <li><h5><i class="fa fa-file"></i> Papudinho</h5></li>
+        <li>
+          <h4>Projects</h4>
+          <span class="action">Add project</span>
+        </li>
+        <li class="icon-title"><h5><i class="fa fa-file"></i> Papudinho</h5></li>
+        <li class="icon-title"><h5><i class="fa fa-file"></i> Papudinho</h5></li>
+        <li class="icon-title"><h5><i class="fa fa-file"></i> Papudinho</h5></li>
+        <li class="icon-title"><h5><i class="fa fa-file"></i> Papudinho</h5></li>
       </ul>
     </div>
 

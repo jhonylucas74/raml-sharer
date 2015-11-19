@@ -230,10 +230,10 @@ app.factory('User', function($q, $http){
 
 app.factory('Group', function( $q, $http){
 
-  function index(){
+  function index(userID){
     var q = $q.defer();
 
-    $http.get("http://localhost:3000/api/groups?id=72")
+    $http.get("http://localhost:3000/api/groups?id="+userID)
     .then(function(res){
       q.resolve(res.data.results);
     }, function(data){
@@ -243,10 +243,36 @@ app.factory('Group', function( $q, $http){
     return q.promise;
   }
 
+  function members(groupId){
+    var q = $q.defer();
 
+    $http.get("http://localhost:3000/api/groups/"+groupId+"/members")
+    .then(function(res){
+      q.resolve(res.data.results);
+    }, function(data){
+      q.reject(data);
+    });
+
+    return q.promise;
+  }
+
+  function history(groupId){
+    var q = $q.defer();
+
+    $http.get("http://localhost:3000/api/groups/"+groupId+"/history")
+    .then(function(res){
+      q.resolve(res.data.results);
+    }, function(data){
+      q.reject(data);
+    });
+
+    return q.promise;
+  }
 
   return {
-    index: index
+    index: index,
+    members: members,
+    history: history
   };
 
 });

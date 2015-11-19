@@ -17,18 +17,18 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
   <!-- BOWER CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" type="text/css" href="vendor/fontawesome/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="vendor/ngDialog/css/ngDialog.min.css">
   <link rel="stylesheet" type="text/css" href="vendor/ngDialog/css/ngDialog-theme-default.min.css">
+
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/build/layout.css">
-  <link rel="stylesheet" href="css/layout.css">
-
 
   <!-- BOWER JS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -53,8 +53,6 @@
   <script src="js/directives.js"></script>
   <script src="js/factorys.js"></script>
 
-
-
 </head>
 <body ng-app="my-app">
 
@@ -65,7 +63,7 @@
       <button ng-click="go('#/project/new')"><i class="fa fa-plus"></i> NEW PROJECT</button>
       <button ng-click="go('#/groups')"><i class="fa fa-share-alt"></i> GROUPS </button>
       <button ng-click="go('#/project/new')"><i class="fa fa-wrench"></i> {{ username }} </button>
-      <button ng-click="go('#/project/new')"><i class="fa fa-sign-out"></i> Sign out </button>
+      <button ng-click="signOut()"><i class="fa fa-sign-out"></i> Sign out </button>
     </div>
   </header>
 
